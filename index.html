@@ -159,63 +159,175 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Contact Section Form-->
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-xl-7">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">Email address</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Phone number</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                            <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
-                        </form>
-                    </div>
+                <style>
+
+                    input[name="nom"]
+                    {
+                    margin-left: 83px;
+                    }
+                
+                    input[name="prenom"]
+                    {
+                    margin-left: 65px;
+                    }
+                
+                    label[for="civilite"]
+                    {
+                    margin-left: 67px;
+                    }
+                
+                    label[name="numero"]
+                    {
+                    margin-left: 125px;
+                    }
+                
+                    input[name="nom"]
+                    {
+                    margin-left: 83px;
+                    }
+                
+                    input[name="telephone"]
+                    {
+                    margin-left: 45px;
+                    }
+                
+                    input[name="mail"]
+                    {
+                    margin-left: 69px;
+                    }
+                
+                </style>
+                
+                
+                
+                <body>
+                    <form>
+                    <div>
+                
+                    <fieldset>
+                        <legend></legend>
+                    
+                        <div>
+                
+                            <label>Civilité :</label>
+                
+                            <label for="civilite">Mr</label>
+                          <input type="radio">
+                
+                          <label for="Mme ou Mlle">Mme ou Mlle</label>
+                          <input type="radio">
+                
+                        </div>
+                
+                
+                        <div>
+                
+                            <label>Nom :</label>
+                            <input type="text" name="nom" valeur="10">
+                
+                        </div>
+                
+                
+                        <div>
+                
+                            <label>Prénom :</label>
+                            <input type="text" name="prenom" valeur="10">
+                            
+                        </div>
+                
+                
+                <div>
+                            <label for="Date de naissance">Date de naissance :</label>
+                
+                <select>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+                
+                <select>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                
+                    Année :
+                
+                    <input>
+                </test>
                 </div>
+                
+                <p>
+                    <label name="numero">Numéro</label>
+                    <input>
+                    <label>Rue</label>
+                    <input>
+                </p>
+                
+                <p>
+                    Adresse :
+                </p>
+                
+                <p>
+                    <label name="numero">Code Postal</label>
+                    <input>
+                    <label>Ville</label>
+                    <input>
+                </p>
+                
+                <p>
+                    <label>Téléphone :</label>
+                            <input type="text" name="telephone" valeur="10">
+                </p>
+                
+                <p>
+                    <label>E-mail :</label>
+                            <input type="text" name="mail" valeur="10">
+                </p>
+                
+                <p>
+                    
+                    <input type="submit" value="Envoyer">
+                    <input type="reset" value="Remise à zéro">
+                </p>
+                </form>
             </div>
         </section>
         <section class="page-section portfolio" id="CV"></section>
